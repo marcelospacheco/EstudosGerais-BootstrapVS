@@ -1,0 +1,239 @@
+﻿@{
+    ViewData["Title"] = "Tabelas";
+}
+
+<div class="row w-100 d-block mx-auto text-center bg-black text-white">
+    <h1>Tabelas</h1>
+</div>
+
+<p class="bg-dark text-white">Classe table table-dark</p>
+<table class="table table-dark">
+
+    <thead>
+        <tr class="border">
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Café 500gr</td>
+            <td>R$ 20,50</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Coca lata 355ml</td>
+            <td>R$ 5,99</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Sorvete pote 1,5l</td>
+            <td>R$ 19,90</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<br /><br />
+
+<p class="bg-success text-white pb-0">Classe table-* aplicada na tr (linha) </p>
+<table class="table">
+
+    <thead>
+        <tr class="border">
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-primary">
+            <td>1</td>
+            <td>Café 500gr</td>
+            <td>R$ 20,50</td>
+        </tr>
+        <tr class="table-warning">
+            <td>5</td>
+            <td>Coca lata 355ml</td>
+            <td>R$ 5,99</td>
+        </tr>
+        <tr class="table-danger">
+            <td>9</td>
+            <td>Sorvete pote 1,5l</td>
+            <td>R$ 19,90</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<br /><br />
+
+<p class="bg-warning text-dark pb-0">Classe table-* aplicada na td (célula) </p>
+<table class="table">
+
+    <thead>
+        <tr class="border">
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-primary">
+            <td>1</td>
+            <td>Café 500gr</td>
+            <td class="table-light">R$ 20,50</td>
+        </tr>
+        <tr class="table-warning">
+            <td>5</td>
+            <td>Coca lata 355ml</td>
+            <td class="table-primary">R$ 5,99</td>
+        </tr>
+        <tr class="table-danger">
+            <td>9</td>
+            <td>Sorvete pote 1,5l</td>
+            <td class="table-dark">R$ 19,90</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<br /><br />
+
+<p class="bg-danger text-white pb-0">Classe table-striped deixa a aparencia da tabela zebrada </p>
+<table class="table table-striped table-danger ">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Café 500gr</td>
+            <td>R$ 20,50</td>
+        </tr>
+        <tr >
+            <td>5</td>
+            <td>Coca lata 355ml</td>
+            <td>R$ 5,99</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Sorvete pote 1,5l</td>
+            <td>R$ 19,90</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<br /><br />
+
+<p class="bg-secondary text-white pb-0">Classe table-hover cria um efeito hover na linha foco do mouse </p>
+<table class="table table-primary table-hover">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Café 500gr</td>
+            <td>R$ 20,50</td>
+        </tr>
+        <tr >
+            <td>5</td>
+            <td>Coca lata 355ml</td>
+            <td>R$ 5,99</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Sorvete pote 1,5l</td>
+            <td>R$ 19,90</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<br /><br />
+
+<p class="bg-dark text-white">Classe table table-bordered coloca borda em todas as células</p>
+<p class="bg-dark text-white">Classe table border-primary ou variantes, troca a cor borda no caso está como primary</p>
+<p class="bg-dark text-white">Classe table-active - deixa o item como "ativo"</p>
+<table class="table table-light table-bordered border-primary">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class=" table-active">
+            <td>1</td>
+            <td>Café 500gr</td>
+            <td>R$ 20,50</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Coca lata 355ml</td>
+            <td>R$ 5,99</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Sorvete pote 1,5l</td>
+            <td>R$ 19,90</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<br /><br />
+
+<p class="bg-dark text-white">Classe table table-borderless retira as bordas</p>
+<table class="table table-dark table-striped table-borderless">
+
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class=" table-active">
+            <td>1</td>
+            <td>Café 500gr</td>
+            <td>R$ 20,50</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Coca lata 355ml</td>
+            <td>R$ 5,99</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Sorvete pote 1,5l</td>
+            <td>R$ 19,90</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">
+                <p class="text-center">Elemento html <mark class="bg-info">colspan</mark> mescla as células da linha</p>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+

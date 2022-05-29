@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Badge";
+}
+
+<div class="row w-100 text-center bg-black text-white">
+    <h1>Badges</h1>
+</div>
+
+<div class="row py-2">
+    <div class="col-5">
+        <h6>O componente <span class="badge bg-primary">badge</span></h6>
+        <p>Os componentes <span class="badge bg-warning">badge</span> são usados para <span class="badge bg-danger">destacar pequenas porções de texto e outros componentes do Bootstrap</span>. A partir de V.5, os badge não tem mais estilo de foco ou foco para link.</p>
+        <br />
+        <br />
+
+        <a href="#" class="d-block my-2">badge com rouded-circle <span class="badge bg-primary rounded-circle">8</span></a>
+        <a href="#" class="d-block my-2">Aventura <span class="badge bg-secondary">150</span></a>
+        <a href="#" class="d-block my-2">Ficção <span class="badge bg-danger">13</span></a>
+        <a href="#" class="d-block my-2">badge com rouded-pill <span class="badge bg-success rounded-pill">22</span></a>
+
+    </div>
+
+    <div class="col-7">
+        <div class="bg-dark text-white">
+            <span class="badge bg-danger">classe badge</span> dentro de um botão
+        </div>
+        <button class="btn btn-primary">
+            Outros gêneros <span class="badge bg-warning">125</span>
+        </button>
+
+        <div class="bg-dark text-white">
+            <span class="badge bg-danger">classe badge</span> posicionada onde quiser no botão nesse caso os valores de top-100 e start-0
+        </div>
+        <button class="btn btn-primary position-relative d-block">
+            Outros gêneros <span class="badge translate-middle position-absolute top-100 start-0 bg-warning rounded-pill">125</span>
+            
+        </button>
+        <p class="py-2"> Para ajustar o posicionamento podemos <mark class="bg-success text-white">trocar os valores class top-* e/ou start-* (0 - 50 - 100) no classe badge</mark></p>
+
+    </div>
+
+</div>
+
+

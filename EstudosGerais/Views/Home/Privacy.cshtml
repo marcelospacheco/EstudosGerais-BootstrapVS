@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Colunas";
+}
+
+
+
+@*Cabeçalho da página*@
+<div class="row w-100 text-center bg-black text-white">
+    <h1>@ViewData["Title"]</h1>
+</div>
+@*Fim do cabeçalho*@
+
+<!----------------------------------------------------->
+@*Área das colunas*@
+<div class="row">
+
+    @*Coluna lado esquerdo*@
+    <div class="col-6">
+
+
+        <div class="row text-center">
+            <h2 class="fst-italic border-bottom d-block mx-auto">Marcelo Pacheco</h2>
+            <img class="w-25 rounded-circle d-block mx-auto py-3" src="/imgs/avatar_400x400.jpg" alt="Foto perfil" />
+        </div>
+        <p>     Duis leo varius nullam a mauris litora eget velit erat euismod ante, ornare elit felis lobortis non potenti fames dolor dapibus. vestibulum justo pellentesque lobortis morbi nisi semper, aliquam commodo mattis elit pulvinar ac nulla, fusce curae fringilla ultrices cursus. consectetur enim consequat quisque tristique donec platea habitant etiam, vivamus mauris ligula primis consequat dolor vulputate, semper fames aliquam aptent dolor viverra mattis. malesuada curabitur pellentesque congue semper himenaeos orci quisque nisl aliquet per, nisl neque varius elementum vitae per hac urna aptent, ut sem vivamus auctor curabitur etiam felis enim tellus. </p>
+
+    </div>
+
+    @*Fim Coluna lado esquerdo*@
+
+    <!------------------------------------------------------->
+    @*Colunas lado direito*@
+
+
+
+
+
+    @*Fim Colunas com accordion*@
+
+
+    <!------------------------------------------------->
+    @*Colunas comuns*@
+    <div class="col-6 border-start">
+        <h5 class="text-uppercase">Accordion</h5>
+
+        @*Colunas com accordion*@
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>     Lorem ipsum quis (<span class="text-primary">tristique luctus lacus tortor posuere et curabitur vestibulum</span>), consequat ut mi fusce curae habitasse lacus semper turpis, suspendisse semper ullamcorper dictumst mauris urna conubia cubilia leo. potenti sapien ornare diam a <b>accumsan cursus</b> quisque ante feugiat vel sagittis, cras lectus scelerisque tortor dui bibendum nunc bibendum sed. id ullamcorper imperdiet praesent egestas primis interdum mauris, consectetur aliquam vel turpis consequat donec urna aenean, odio congue dolor nostra <mark>sagittis pretium</mark>. tempor duis inceptos ullamcorper conubia etiam accumsan, ad id vehicula orci hac eros, commodo praesent class viverra velit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="text-light bg-black">     Lorem ipsum quis (<span class="text-secondary">tristique luctus lacus tortor posuere et curabitur vestibulum</span>), consequat ut mi fusce curae habitasse lacus semper turpis, suspendisse semper ullamcorper dictumst mauris urna conubia cubilia leo. potenti sapien ornare diam a <b>accumsan cursus</b> quisque ante feugiat vel sagittis, cras lectus scelerisque tortor dui bibendum nunc bibendum sed. id ullamcorper imperdiet praesent egestas primis interdum mauris, consectetur aliquam vel turpis consequat donec urna aenean, odio congue dolor nostra <mark>sagittis pretium</mark>. tempor duis inceptos ullamcorper conubia etiam accumsan, ad id vehicula orci hac eros, commodo praesent class viverra velit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>     Lorem ipsum quis (<span class="text-info">tristique luctus lacus tortor posuere et curabitur vestibulum</span>), consequat ut mi fusce curae habitasse lacus semper turpis, suspendisse semper ullamcorper dictumst mauris urna conubia cubilia leo. potenti sapien ornare diam a <b>accumsan cursus</b> quisque ante feugiat vel sagittis, cras lectus scelerisque tortor dui bibendum nunc bibendum sed. id ullamcorper imperdiet praesent egestas primis interdum mauris, consectetur aliquam vel turpis consequat donec urna aenean, odio congue dolor nostra <mark>sagittis pretium</mark>. tempor duis inceptos ullamcorper conubia etiam accumsan, ad id vehicula orci hac eros, commodo praesent class viverra velit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*Fim do accordion*@
+
+        <h5 class="text-uppercase">Sem Accordion</h5>
+
+        <p>     Lorem ipsum quis (<span class="text-primary">tristique luctus lacus tortor posuere et curabitur vestibulum</span>), consequat ut mi fusce curae habitasse lacus semper turpis, suspendisse semper ullamcorper dictumst mauris urna conubia cubilia leo. potenti sapien ornare diam a <b>accumsan cursus</b> quisque ante feugiat vel sagittis, cras lectus scelerisque tortor dui bibendum nunc bibendum sed. id ullamcorper imperdiet praesent egestas primis interdum mauris, consectetur aliquam vel turpis consequat donec urna aenean, odio congue dolor nostra <mark>sagittis pretium</mark>. tempor duis inceptos ullamcorper conubia etiam accumsan, ad id vehicula orci hac eros, commodo praesent class viverra velit.</p>
+
+        <h5 class="text-uppercase">Lorem ipsum III</h5>
+        <p class="text-light bg-black">     Lorem ipsum quis (<span class="text-secondary">tristique luctus lacus tortor posuere et curabitur vestibulum</span>), consequat ut mi fusce curae habitasse lacus semper turpis, suspendisse semper ullamcorper dictumst mauris urna conubia cubilia leo. potenti sapien ornare diam a <b>accumsan cursus</b> quisque ante feugiat vel sagittis, cras lectus scelerisque tortor dui bibendum nunc bibendum sed. id ullamcorper imperdiet praesent egestas primis interdum mauris, consectetur aliquam vel turpis consequat donec urna aenean, odio congue dolor nostra <mark>sagittis pretium</mark>. tempor duis inceptos ullamcorper conubia etiam accumsan, ad id vehicula orci hac eros, commodo praesent class viverra velit.</p>
+
+
+        <h5 class="text-uppercase">Lorem ipsum I</h5>
+
+        <p>     Lorem ipsum quis (<span class="text-info">tristique luctus lacus tortor posuere et curabitur vestibulum</span>), consequat ut mi fusce curae habitasse lacus semper turpis, suspendisse semper ullamcorper dictumst mauris urna conubia cubilia leo. potenti sapien ornare diam a <b>accumsan cursus</b> quisque ante feugiat vel sagittis, cras lectus scelerisque tortor dui bibendum nunc bibendum sed. id ullamcorper imperdiet praesent egestas primis interdum mauris, consectetur aliquam vel turpis consequat donec urna aenean, odio congue dolor nostra <mark>sagittis pretium</mark>. tempor duis inceptos ullamcorper conubia etiam accumsan, ad id vehicula orci hac eros, commodo praesent class viverra velit.</p>
+    </div>
+
+    @*Fim Coluna lado direito*@
+
+</div>
+
+
+
+
+

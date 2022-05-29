@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Botões";
+}
+
+@*Título página*@
+<div class="row w-100 text-center bg-black text-white">
+    <h1>Botões</h1>
+</div>
+
+<div class="row">
+
+    @*col-4*@
+
+    <div class="col-4 border-end">
+        @*btn-outline*@
+        <div class="border-bottom py-2">
+            <span class="bg-dark text-white">
+                Classes btn-outline-*
+            </span>
+            <br />
+
+            <button type="button" class="btn btn-outline-primary">outline-primary</button>
+            <button type="button" class="btn btn-outline-danger">outline-danger</button>
+
+            <button type="button" class="btn btn-link">btn-link</button>
+            <br />
+            <br />
+        </div>
+
+        @*btn-goup*@
+        <div class="border-bottom py-2">
+            <span class="bg-dark text-white d-block">
+                Classe btn-group => agrupa os botões em uma barra
+            </span>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary">Opção 1</button>
+                <button type="button" class="btn btn-danger">Opção 2</button>
+                <button type="button" class="btn btn-warning">Opção 3</button>
+            </div>
+
+        </div>
+
+        @*btn-group-vertical*@
+        <div class="border-bottom py-2">
+            <span class="bg-dark text-white d-block">
+                Classe btn-group-vertical
+            </span>
+
+            <div class="btn-group-vertical" role="group">
+                <button type="button" class="btn btn-primary">Opção 1</button>
+                <button type="button" class="btn btn-danger">Opção 2</button>
+                <button type="button" class="btn btn-warning">Opção 3</button>
+            </div>
+        </div>
+
+        @*btn-check*@
+        <div class="border-bottom py-2">
+            <span class="bg-dark text-white d-block">
+                Classe btn-check => deixa o botão clicado com foco
+            </span>
+
+            <div class="btn-group" role="group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked />
+                <label class="btn btn-outline-primary" for="btnradio1">Feminino</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked />
+                <label class="btn btn-outline-primary" for="btnradio2">Masculino</label>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    @*col-8*@
+    <div class="col-8">
+        @*btn-**@
+        <div class="border-bottom py-2">
+            <span class="bg-dark text-white">
+                Classe btn-*
+            </span>
+            <br />
+            <button type="button" class="btn btn-secondary btn-sm">btn-secondary</button>
+            <button type="button" class="btn btn-success btn-lg">btn-success</button>
+            <button type="button" class="btn btn-warning">btn-warning</button>
+            <button type="button" class="btn btn-danger">btn-danger</button>
+            <button type="button" class="btn btn-info">btn-info</button>
+        </div>
+
+        @*d-block*@
+        <div class="border-bottom py-2">
+            <span class="bg-dark text-white">
+                Classe <mark>d-block</mark> no botão, provoca a quebra de linha
+            </span>
+            <button type="button" class="btn btn-light d-block ">btn-light</button>
+            <button type="button" class="btn btn-dark d-block">btn-dark</button>
+            <br />
+        </div>
+
+
+        @*d-grid gap-**@
+        <div class="border-bottom py-2">
+            <div class="d-grid gap-2">
+                <span class="bg-dark text-white">Classe <mark>d-grid</mark>, faz o botão ocupar a coluna inteira.</span>
+                <span class="bg-dark text-white">Classe <mark>gap-*</mark>, define a distancia no eixo-y entre os botões.</span>
+                <button type="button" class="btn btn-primary">Button 1</button>
+                <button type="button" class="btn btn-primary">Button 2</button>
+            </div>
+        </div>
+
+        @*d-md-block*@
+        <div class="border-bottom py-2">
+            <div class="d-grid gap-2 d-md-block">
+                <span class="bg-dark text-white">Classe <mark>d-md-block</mark> varia o tamanho do botão de acordo com o tamanho da tela.</span>
+                <button type="button" class="btn btn-primary">Button1 d-md-block</button>
+                <button type="button" class="btn btn-primary">Button2 d-md-block</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
